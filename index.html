@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrugalDevs — Startup speed. Enterprise discipline.</title>
+  <meta name="description" content="FrugalDevs helps startups launch fast on lean, low-cost infrastructure — and scale it deliberately. Every system ships with a written upgrade path.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="frugaldevs.com — home">
+        <span class="logo-frugal">frugal</span><span class="logo-devs">devs</span><span class="logo-tld">.com</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#approach">approach</a>
+        <a href="#build-vs-buy">build-vs-buy</a>
+        <a href="#services">services</a>
+        <a href="#work">work</a>
+        <a class="nav-contact" href="#contact">./contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="kicker" id="hero-kicker">$ <span class="typed">whoami</span><span class="cursor" aria-hidden="true"></span></p>
+        <h1>Startup speed.<br>Enterprise discipline.</h1>
+        <p class="hero-sub">
+          FrugalDevs helps startups launch fast on <strong>lean, low-cost infrastructure</strong> — and
+          scale it deliberately. Every system ships with a written upgrade path: what to
+          replace, at what load, at what cost. Best practices from the first commit.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">talk to an engineer &rarr;</a>
+          <a class="btn btn-ghost" href="#services">see what we build</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The approach -->
+    <section class="section section-tan" id="approach">
+      <div class="container">
+        <p class="kicker" data-type>// THE APPROACH</p>
+        <h2>Fast doesn't have to mean fragile.<br>Lean doesn't have to mean sloppy.</h2>
+
+        <div class="approach-grid">
+          <article class="approach-cell">
+            <p class="cell-num">01</p>
+            <h3>Launch lean, on purpose</h3>
+            <p>Prototypes and v1s go live on managed free tiers and boring single-node setups that carry
+               real production traffic. No Kubernetes, no Kafka, no five-figure cloud bill before your first
+               thousand users.</p>
+          </article>
+          <article class="approach-cell">
+            <p class="cell-num">02</p>
+            <h3>Scale on a written plan</h3>
+            <p>Every component ships with its successor named: what to switch to when demand
+               grows, at what threshold, and what the migration costs. Growth is a line item, not a
+               rewrite.</p>
+          </article>
+          <article class="approach-cell">
+            <p class="cell-num">03</p>
+            <h3>Enterprise discipline, day one</h3>
+            <p>CI/CD, tests, observability, security review from the first commit — big-company rigor at
+               startup size, so nothing has to be rebuilt to grow up.</p>
+          </article>
+        </div>
+
+        <div class="split">
+          <div class="split-text">
+            <h3>Scale when demand does — not before</h3>
+            <p>Your prototype doesn't need Kubernetes. Your first thousand users don't need
+               Kafka. We launch on managed, free-tier and single-node setups that carry real
+               production traffic — and hand you the migration plan for the day they stop
+               being enough.</p>
+          </div>
+          <div class="code-block" role="img" aria-label="The upgrade path, written down: launch on postgres, one box, managed cron; at 10x, read replicas and a managed queue; at 100x, partitions, kafka, k8s — when it pays. Day one, every time: ci/cd, tests, observability, security review.">
+            <p class="code-comment"># the upgrade path, written down</p>
+            <p><span class="code-accent">launch</span> &rarr; postgres, one box, managed cron</p>
+            <p><span class="code-accent">10&times;</span> &rarr; read replicas, managed queue</p>
+            <p><span class="code-accent">100&times;</span> &rarr; partitions, kafka, k8s — when it pays</p>
+            <p class="code-comment code-gap"># day one, every time</p>
+            <p>ci/cd &middot; tests &middot; observability &middot; security review</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Build vs buy -->
+    <section class="section" id="build-vs-buy">
+      <div class="container">
+        <p class="kicker" data-type>// BUILD VS BUY</p>
+        <h2>A calculation, not a preference.</h2>
+
+        <div class="ledger-grid">
+          <article class="ledger">
+            <p class="ledger-head">if (build) {</p>
+            <ul>
+              <li><span class="ledger-num">b.01</span>The capability is your moat — renting it means renting your advantage.</li>
+              <li><span class="ledger-num">b.02</span>Three-year TCO of the vendor exceeds a senior build, run cost included.</li>
+              <li><span class="ledger-num">b.03</span>Lock-in is high: proprietary formats, punitive exit terms, no data portability.</li>
+              <li><span class="ledger-num">b.04</span>The vendor covers 60% of the workflow — and the other 40% is where your money is made.</li>
+            </ul>
+            <p class="ledger-foot">}</p>
+          </article>
+          <article class="ledger">
+            <p class="ledger-head">else buy {</p>
+            <ul>
+              <li><span class="ledger-num">y.01</span>It's plumbing — undifferentiated capability the market sells at commodity price.</li>
+              <li><span class="ledger-num">y.02</span>Time to value wins: the vendor ships in weeks, a build lands in quarters.</li>
+              <li><span class="ledger-num">y.03</span>You'd own a system you can't staff — maintenance outlives the builder.</li>
+              <li><span class="ledger-num">y.04</span>The vendor's scale (compliance, uptime, security) isn't worth rebuilding.</li>
+            </ul>
+            <p class="ledger-foot">}</p>
+          </article>
+        </div>
+
+        <p class="footnote">
+          Every engagement opens with this analysis — three-year total cost of ownership, lock-in priced, integration
+          cost on the sheet. About one in four reports concludes you shouldn't hire us to build anything. You get it in
+          writing either way.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-tan" id="services">
+      <div class="container">
+        <p class="kicker" data-type>// WHAT WE BUILD</p>
+        <h2>Services</h2>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <p class="svc-num">svc/01</p>
+            <h3>Custom Software Development</h3>
+            <p>Product engineering with small senior teams. Boring, reliable stacks chosen for total cost of ownership — not novelty.</p>
+          </article>
+          <article class="service-card">
+            <p class="svc-num">svc/02</p>
+            <h3>AI Agents</h3>
+            <p>Production agent systems that automate real workflows — scoped to ROI, with evals and guardrails from day one.</p>
+          </article>
+          <article class="service-card">
+            <p class="svc-num">svc/03</p>
+            <h3>Browser Agents</h3>
+            <p>Agents that operate real web UIs: form-filling, portal automation, scraping-grade reliability with human fallbacks.</p>
+          </article>
+          <article class="service-card">
+            <p class="svc-num">svc/04</p>
+            <h3>Eval Frameworks</h3>
+            <p>If you can't measure it, you're paying for vibes. Eval harnesses that make model and agent quality a number.</p>
+          </article>
+          <article class="service-card">
+            <p class="svc-num">svc/05</p>
+            <h3>Distributed System Design</h3>
+            <p>Consensus, partitioning, failure domains. Systems that scale on paper before they scale on your cloud bill.</p>
+          </article>
+          <article class="service-card">
+            <p class="svc-num">svc/06</p>
+            <h3>Data-Intensive System Design</h3>
+            <p>Storage engines, query paths, and throughput math done right — designed around your access patterns, not a vendor's.</p>
+          </article>
+          <article class="service-card">
+            <p class="svc-num">svc/07</p>
+            <h3>ETL &amp; Data Stack</h3>
+            <p>Pipelines that don't wake anyone at 3am. We consolidate the seven tools doing one job into one tool doing it well.</p>
+          </article>
+          <article class="service-card">
+            <p class="svc-num">svc/08</p>
+            <h3>Cloud &amp; DevOps Support</h3>
+            <p>Right-sized infrastructure, CI/CD, and observability. Usually the first place we cut 30% of spend.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected work -->
+    <section class="section" id="work">
+      <div class="container">
+        <p class="kicker" data-type>// SELECTED WORK</p>
+        <h2>Receipts</h2>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-media" aria-hidden="true">
+              <span class="work-media-label">img / startup-launch</span>
+            </div>
+            <div class="work-body">
+              <p class="work-tags">launch &middot; lean stack</p>
+              <h3>Prototype to production in six weeks</h3>
+              <p>Placeholder case study — v1 launched on free-tier infrastructure carrying paying customers; upgrade path executed at 20&times; growth.</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-media" aria-hidden="true">
+              <span class="work-media-label">img / ai-agent-rollout</span>
+            </div>
+            <div class="work-body">
+              <p class="work-tags">ai agents &middot; build</p>
+              <h3>An agent that pays its own way</h3>
+              <p>Placeholder case study — browser agent automating a back-office portal, eval harness gating every release.</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-media" aria-hidden="true">
+              <span class="work-media-label">img / cloud-right-sizing</span>
+            </div>
+            <div class="work-body">
+              <p class="work-tags">cloud/devops &middot; optimize</p>
+              <h3>The 34% cloud bill</h3>
+              <p>Placeholder case study — infrastructure right-sizing and observability cleanup; add the before/after spend.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work -->
+    <section class="section section-tan" id="how-we-work">
+      <div class="container">
+        <div class="split split-top">
+          <div class="split-text">
+            <p class="kicker" data-type>// HOW WE WORK</p>
+            <h2>Small teams. Fixed scopes.<br>Receipts for every dollar.</h2>
+            <p>Every engagement starts with the spend analysis. You get it whether or not
+               you hire us to build — the recommendation is the product, not the upsell.</p>
+            <ul class="stack-tags" aria-label="Our stack">
+              <li>python</li><li>typescript</li><li>go</li><li>postgres</li><li>sqlite</li><li>railway</li>
+              <li>supabase</li><li>terraform</li><li>aws</li><li>gcp</li><li>playwright</li><li>grafana</li>
+            </ul>
+          </div>
+          <div class="code-block" role="img" aria-label="Typical engagement: weeks one and two, spend analysis and system map. Week three, build-vs-buy report and TCO models. Week four onward, build the shortlist, kill the rest. Exit criteria: spend down, reliability up, lock-in down.">
+            <p class="code-comment"># typical engagement</p>
+            <p><span class="code-accent">week 1-2</span> &rarr; spend analysis + system map</p>
+            <p><span class="code-accent">week 3</span> &rarr; build-vs-buy report, TCO models</p>
+            <p><span class="code-accent">week 4+</span> &rarr; build the shortlist, kill the rest</p>
+            <p class="code-comment code-gap"># exit criteria</p>
+            <p>spend &darr;, reliability &uarr;, lock-in &darr;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <p class="kicker" data-type>// WHAT CLIENTS SAY</p>
+        <div class="quotes-grid">
+          <figure class="quote">
+            <blockquote>
+              &ldquo;They told us not to build two of the three systems we asked for. The vendors they
+              picked cost a third of our plan — the one they built runs the business.&rdquo;
+            </blockquote>
+            <figcaption>// VP Engineering, logistics platform (placeholder)</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>
+              &ldquo;We launched on their &lsquo;boring&rsquo; stack and it held through our Series A spike. The
+              upgrade plan they wrote on day one is the roadmap we're executing now.&rdquo;
+            </blockquote>
+            <figcaption>// Founder, B2B SaaS (placeholder)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-tan section-contact" id="contact">
+      <div class="container">
+        <p class="kicker" data-type>// CONTACT</p>
+        <h2>Before you sign that next<br>vendor contract — talk to us.</h2>
+        <p class="contact-sub">A one-hour call with an engineer, not a salesperson. You leave with a
+           written recommendation either way.</p>
+        <div class="cta-row cta-center">
+          <a class="btn btn-primary" href="mailto:hello@frugaldevs.com">hello@frugaldevs.com</a>
+          <a class="btn btn-ghost" href="#build-vs-buy">how we decide</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> frugaldevs.com — spend wisely.</p>
+      <p>custom software &middot; ai agents &middot; distributed systems &middot; cloud</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="main.js" defer></script>
+</body>
+</html>
